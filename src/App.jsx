@@ -70,7 +70,9 @@ function App() {
   }
 
   return (
+    <>
     <div className='App'>
+    <h1>Tick Tack Toe</h1>
       <div className='board'>
         <div className='row'>
           <Square
@@ -132,9 +134,9 @@ function App() {
             }}
           />
         </div>
-
       </div>
     </div>
+    </>
   )
 }
 

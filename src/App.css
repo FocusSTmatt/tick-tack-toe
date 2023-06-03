@@ -1,21 +1,42 @@
-  body {
+@font-face {
+  font-family: scoreboard;
+  src: url(./assets/Ozone-xRRO.ttf);
+}
+  
+  body, * {
     margin: 0;
     padding: 0;
+    font-family: scoreboard, cursive;
+    background: rgb(14, 14, 14);
+  }
+
+  h1 {
+    font-size: 80px;
+    color: red;
+    padding: 0.8em;
   }
   
   .App {
     width: 100vw;
     height: 100vw;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
     align-items: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 
   .board {
     width: 500px;
     height: 500px;
     background: black;
-    border: 10px solid red;
+    border: 5px solid red;
     display: flex;
     flex-direction: column;
   }
@@ -29,14 +50,15 @@
   .square {
     flex: 33%;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid red;
     cursor: pointer;
     display: grid;
     place-items: center;
-    font-size: 30px;
+    font-size: 70px;
     color: red;
+    background: black;
   }
 
-  .square:active {
-    background: rgb(223, 44, 44);
+  .square:hover {
+    background: rgb(244, 215, 215);
   }
